@@ -29,6 +29,13 @@
         <button @click="ShowButtons">
             {{ buttons ? 'Hide buttons' : 'Show buttons' }}
         </button>
+        <ul>
+            <li v-for="laptop in laptops">
+               {{ laptop.name }} - {{ laptop.brand }}
+            </li>
+        </ul>
+
+
         <p v-show="buttons">Now you can see me!</p>
 
         <div class="box" @mouseover="EventHandler"></div>

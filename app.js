@@ -7,7 +7,12 @@ const app = Vue.createApp({
             job : 'Student',
             buttons : true,
             x : 0,
-            y : 0
+            y : 0,
+            laptops : [
+                {name: "Asus Tuf", brand: "Asus"},
+                {name: "Legion", brand: "Lenovo"},
+                {name: "Predator", brand: "Acer"},
+            ]
         }
     },
     methods: {
