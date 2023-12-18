@@ -34,7 +34,7 @@
 
         <!-- Data Listing-->
         <ul>
-            <li v-for="laptop in laptops">
+            <li v-for="laptop in laptops" :class="{ rtx: laptop.isRTX }">
                {{ laptop.name }} - {{ laptop.brand }}
             </li>
         </ul>

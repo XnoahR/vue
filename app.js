@@ -10,9 +10,9 @@ const app = Vue.createApp({
             x : 0,
             y : 0,
             laptops : [
-                {name: "Asus Tuf", brand: "Asus"},
-                {name: "Legion", brand: "Lenovo"},
-                {name: "Predator", brand: "Acer"},
+                {name: "Asus Tuf", brand: "Asus", isRTX: false},
+                {name: "Legion", brand: "Lenovo", isRTX: true},
+                {name: "Predator", brand: "Acer", isRTX: true},
             ]
         }
     },
