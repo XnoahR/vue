@@ -5,7 +5,9 @@ const app = Vue.createApp({
             name : 'Raychi',
             age : 21,
             job : 'Student',
-            buttons : true
+            buttons : true,
+            x : 0,
+            y : 0
         }
     },
     methods: {
@@ -17,6 +19,13 @@ const app = Vue.createApp({
         },
         ShowButtons(){
             this.buttons = !this.buttons;
+        },
+        EventHandler(e){
+            console.log(e,e.type);
+        },
+        CursorTracker(e){
+            this.x = e.offsetX;
+            this.y = e.offsetY;
         }
     }
 })
