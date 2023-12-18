@@ -6,6 +6,14 @@ const app = Vue.createApp({
             age : 21,
             job : 'Student',
         }
+    },
+    methods: {
+        Decrease(){
+            this.age--;
+        },
+        ChangeName(name){
+            this.name = name;
+        }
     }
 })
 

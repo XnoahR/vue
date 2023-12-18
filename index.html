@@ -14,6 +14,12 @@
         <h2>
             {{ name }} - {{ age }} - {{ job }}
         </h2>
+        <!-- V-on based inside html file -->
+        <button v-on:click="age++">Increase my age</button> <!-- V-on can be used as allow to react different types of events-->
+        <!-- V-on based inside javascript file -->
+        <button v-on:click="Decrease">Decrease my age</button>
+        <!-- We can also use @ to replace the v-on -->
+        <p @click="ChangeName('Jordan')">Change name</p>
     </div>
 
     <script src="./app.js"></script>
