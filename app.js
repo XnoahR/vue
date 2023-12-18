@@ -2,6 +2,7 @@ const app = Vue.createApp({
     // template: `<h2>This is a template from app.js</h2>`
     data() {
         return {
+            url: 'https://www.google.com',
             name : 'Raychi',
             age : 21,
             job : 'Student',

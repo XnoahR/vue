@@ -17,6 +17,7 @@
         <h2>
             {{ name }} - {{ age }} - {{ job }}
         </h2>
+        <!-- If conditional -->
         <div v-if="buttons">
             <!-- V-on based inside html file -->
             <button v-on:click="age++">Increase my age</button>
@@ -26,18 +27,26 @@
             <!-- We can also use @ to replace the v-on -->
             <p @click="ChangeName('Jordan')">Change name</p>
         </div>
+        <!-- Click Event -->
         <button @click="ShowButtons">
             {{ buttons ? 'Hide buttons' : 'Show buttons' }}
         </button>
+
+        <!-- Data Listing-->
         <ul>
             <li v-for="laptop in laptops">
                {{ laptop.name }} - {{ laptop.brand }}
             </li>
         </ul>
 
+        <!-- Attribute Binding -->
+        <a v-bind:href="url">Google</a><br> <!-- v-bind can be replaced by : -->
+        <a :href="url">Google</a>
 
+        <!-- Conditional Display: none -->
         <p v-show="buttons">Now you can see me!</p>
 
+        <!-- Event Modifiers -->
         <div class="box" @mouseover="EventHandler"></div>
         <div class="box" @mouseleave="EventHandler"></div>
         <div class="box" @dblclick="EventHandler"></div>
