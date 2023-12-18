@@ -5,6 +5,7 @@ const app = Vue.createApp({
             name : 'Raychi',
             age : 21,
             job : 'Student',
+            buttons : true
         }
     },
     methods: {
@@ -13,6 +14,9 @@ const app = Vue.createApp({
         },
         ChangeName(name){
             this.name = name;
+        },
+        ShowButtons(){
+            this.buttons = !this.buttons;
         }
     }
 })
