@@ -1,2 +1,2 @@
 # vue
- Training Vue Framework
+ Training VUE 3 Framework
