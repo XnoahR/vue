@@ -1,0 +1,16 @@
+{
+  "name": "vue",
+  "version": "1.0.0",
+  "description": "Training VUE 3 Framework",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tw": "tailwindcss -i ./css/tailwind.css -o ./css/style.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "tailwindcss": "^3.3.6"
+  }
+}

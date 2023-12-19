@@ -36,4 +36,37 @@ const app = Vue.createApp({
     }
 })
 
+const challenge = Vue.createApp({
+    data(){
+        return{
+            musics:[{
+                title: "Lost Boy",
+                artist: "Ruth B.",
+                cover: "Gawr Gura",
+                isFavorite: true
+            },
+            {
+                title: "December",
+                artist: "Neck Deep",
+                cover: "Hu Tao",
+                isFavorite: false
+            },
+            {
+                title: "Another Love",
+                artist: "Tom Odell",
+                cover: "Hu Tao",
+                isFavorite: true
+            },
+            {
+                title: "Fix You",
+                artist: "Coldplay",
+                cover: "Gawr Gura",
+                isFavorite: false
+            }
+        ]
+        }
+    }
+})
+
 app.mount('#app')
+challenge.mount('#challenge')
