@@ -39,6 +39,8 @@ const app = Vue.createApp({
 const challenge = Vue.createApp({
     data(){
         return{
+            showMusic : true
+            ,
             musics:[{
                 title: "Lost Boy",
                 artist: "Ruth B.",
@@ -69,6 +71,9 @@ const challenge = Vue.createApp({
     methods:{
     changeFavorite(music){
         music.isFavorite = !music.isFavorite;
+    },
+    toggleShowMusic(){
+        this.showMusic = !this.showMusic;
     }
 }
 })
