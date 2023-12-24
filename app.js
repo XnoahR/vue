@@ -65,7 +65,12 @@ const challenge = Vue.createApp({
             }
         ]
         }
+    },
+    methods:{
+    changeFavorite(music){
+        music.isFavorite = !music.isFavorite;
     }
+}
 })
 
 app.mount('#app')

@@ -9,15 +9,22 @@
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 </head>
 <body>
-    <div class="my-btn">sasdasdas</div>
+   
     <div id="challenge">
-         <ul class="w-full bg-gray-400">
-            <li v-for="music in musics" class="flex justify-evenly items-center text-center border border-blue-400">
-               <p>{{ music.title }}</p>
-               <p>{{ music.artist }}</p>
-               <p>{{ music.cover }}</p>
-
+         <ul class="w-ful">
+            <li class="flex justify-evenly items-center text-center border bg-blue-400 h-8 border-blue-400">
+                <p class="w-1/4">Title</p>
+                <p class="w-1/4">Artist</p>
+                <p class="w-1/4">Cover</p>
+                <p class="w-1/4">Favourite</p>
             </li>
+            <li v-for="music in musics" class="flex justify-evenly items-center text-center border-b-2 h-16 border-blue-400">
+                <p class="w-1/4">{{ music.title }}</p>
+                <p class="w-1/4">{{ music.artist }}</p>
+                <p class="w-1/4">{{ music.cover }}</p>
+                <p class="w-1/4" :class="{ 'bg-red-500': music.isFavorite }" @click="changeFavorite(music)">{{ music.isFavorite }}</p>
+            </li>
+            
          </ul>
     </div>
 
